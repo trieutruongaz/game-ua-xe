@@ -1,0 +1,126 @@
+
+.street {
+    background-image: url(https://github.com/Quang-CNTT-20CDTH41/car-JS/blob/main/street.jpg?raw=true);
+    background-size: auto;
+    height: 360px;
+    margin-top: 10px;
+}
+img {
+    padding: 15px;
+}
+
+.btn {
+    width: 140px;
+    margin: auto;
+
+
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(10, 1, 1);
+    color: rgba(240, 235, 235, 0.814);
+    border-radius: 5px;
+}
+
+button:hover {
+    color: rgba(255, 166, 0, 0.519);
+}
+.xe2{
+    margin-left: 22px;
+}
+
+.end {
+    width: 19px;
+    height: 101%;
+    background: rgba(250, 250, 210, 0.726);
+    float: right;
+    margin-top: -328px;
+    margin-right: 110px;
+}
+
+.traffic_light {
+    display: flex;
+}
+
+#first_light {
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+    
+    z-index: 2;
+    margin: 5px;
+    border: 3px solid black;
+}
+
+#second_light {
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid black;
+}
+
+#third_light {
+    width: 50px;
+    height: 50px;
+    border-radius: 28px;
+
+    margin: 5px;
+    z-index: 2;
+    border: 3px solid black;
+}
+
+#xang1 {
+    width: 250px;
+    background: green;
+    height: 10px;
+}
+
+#xang2 {
+    width: 250px;
+    background: green;
+    height: 10px;
+    
+}
+
+.car_runing {
+
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+.xang{
+    border-radius: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(0, -1px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(0, -1px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}

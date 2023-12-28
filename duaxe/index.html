@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đua Xe</title>
+    <style>
+        .street {
+            background-image: url(images/duong.jpg);
+            background-size: auto;
+            height: 360px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="traffic_light">
+            <div id="first_light"></div>
+            <div id="second_light"></div>
+            <div id="third_light"></div>
+            <button onclick="start()">Bắt đầu</button>
+        </div>
+        <div class="xang">
+            Xăng xe 1<div id="xang1"></div>
+            Xăng xe 2<div id="xang2"></div>
+        </div>
+
+        <div class="street">
+            <div id="car_1" class="car_runing">
+                <img class="xe1" src="images/car_1.png" alt="" width="280px">
+                <div class="b1" id="start" onkeydown="start()"></div>
+            </div>
+            <div id="car_2" class="car_runing">
+                <img class="xe2" src="images/car_2.png" alt="" width="235px">
+                <div class="b2" id="start" onkeydown="start()"></div>
+            </div>
+            <div class="end"></div>
+        </div>
+        <div class="btn">
+            <button onclick="repeat()">Bắt đầu lại</button>
+        </div>
+    </div>
+    <p id="log"></p>
+    <audio id="engineSound" src="images/xe.mp3" preload="auto"></audio>
+
+</body>
+
+</html>
